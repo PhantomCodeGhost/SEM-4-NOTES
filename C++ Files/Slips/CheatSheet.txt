@@ -1,0 +1,25 @@
+🔥 Quick Trick to Decide
+Is it a core part of the object's identity (like id, name, etc.)?
+
+✅ Use protected if subclasses need to access it.
+
+✅ Use private if subclasses should not access it directly.
+
+🚀 Final Rule of Thumb
+Use private by default.
+
+Use protected only if necessary for subclass access.
+----------------------------------------------------
+
+
+Area Of Trapezoid : 0.5 * (x + y) * height
+Area of Rectangle : length * breadth 
+Area of Circle : 3.1416 * radius * radius
+
+Volume of Cylinder : 3.1416 * radius * radius * height
+
+
+[ 7  20 ]
+
+
+edited 10; 14;
