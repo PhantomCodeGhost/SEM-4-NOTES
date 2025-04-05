@@ -1,0 +1,28 @@
+<cricket>
+<player>
+    <name>Pandya</name>
+    <runs>120</runs>
+    <wickets>2</wickets>
+</player>
+<player>
+    <name>Virat</name>
+    <runs>111</runs>
+    <wickets>0</wickets>
+</player>
+<player>
+    <name>Kl Rahul</name>
+    <runs>101</runs>
+    <wickets>0</wickets>
+</player>
+<player>
+    <name>Bumrah</name>
+    <runs>20</runs>
+    <wickets>4</wickets>
+</player>
+<player>
+    <name>Kuldeep</name>
+    <runs>10</runs>
+    <wickets>3</wickets>
+</player>
+</cricket>
+
