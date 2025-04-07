@@ -1,0 +1,17 @@
+<cricket>
+<player>
+    <name>Virat</name>
+    <runs>150</runs>
+    <wickets>1</wickets>
+</player>
+<player>
+    <name> Dhoni </name>
+    <runs> 60 </runs>
+    <wickets> 4 </wickets>
+</player>
+<player>
+    <name> Kl Rahul </name>
+    <runs>152</runs>
+    <wickets>2</wickets>
+</player>
+</cricket>

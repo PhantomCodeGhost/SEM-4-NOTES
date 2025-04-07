@@ -1,0 +1,10 @@
+# Types of Array :
+Indexed Array/Normal Array : $fruits = ["Apple","Banana","StrawBerry","Orange","Mango"];
+Multidimentional Array :  array(array(),array(),array());
+Associative Array :  [[],[]];
+
+
+
+
+
+
