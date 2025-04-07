@@ -1,4 +1,0 @@
-# Types of Array :
-Indexed Array 
-Multidimentional Array
-Associative Array 
