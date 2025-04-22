@@ -1,0 +1,172 @@
+        INDEX  
+#/ : End of the Code/Answer
+(L) : Most Likely
+*** : Karoo BC
+* : Karo XD
+-> : Answer
+x ------------------------ x
+
+
+
+
+========================
+# 1 Mark :
+Q) Write syntax for creating XML Http Request object.*
+Q) Define the term type juggling.
+Q) What is DOM Document ( )?
+Q) Where AJAX cannot be used? (ss)
+Q) Advantages of AJAX (might ask)
+Q) Define the terms :
+    i) Constructor
+    ii) Abstract class
+    iii) Inheritance
+    iv) Destructor
+    v) Encapsultation
+    vi) Polymorphism
+=====================
+# 3 Mark :
+Q) Explain Syntax, Describe, Example: *** (L)
+range(), array-slice(), array-reverse(), array-splic( ),array-values()
+in-array(), array-search(), array-reduce(), array-walk(), arr-pad()
+Q) What is inheritance? Give it's syntax.
+Q) Explain how PHP works with web server. (Read) *
+Q) Explain with example about pg_fetch_result ( ) function.
+Q) What are the differences between AJAX and Java Script?* (Read)
+Q) What is multidimensional array? How to access elements from
+multidimensional array?
+Q) What is Interface? Give its Syntax & Characteristics. (3,4 Marks)*
+========================
+# 4 Mark :
+Q) Differentiate between GET and POST method. (L)***
+Q) What is sticky form? Explain with suitable example.***
+Q) Explain web server in detail with it's types.*
+Q) Write a PHP code to generate XML ?*
+Q) What are Cookies ? ***
+-> Cookies are small pieces of data stored on the client-side (in the user's browser) by websites.
+    They are used to store user-specific information such as login sessions, preferences, or tracking details across visits.
+    # Set a cookie :
+    setcookie(name, value, expire, path, domain, secure, httponly);
+    
+    # Access a cookie : 
+    <?php
+        echo $_COOKIE["username"];
+    ?>
+
+    # Destroy a cookie :
+    <?php 
+        $cookie_name = "username";
+        setcookie($cookie_name,"",time() - 3600,"/");
+    ?>
+#/
+===============================
+# 5 Mark :
+f) Explain serialization in detail with example.* (L)
+Q) Differentiate between for loop and For each loop.** (L)
+Q) How GET and POST method's are used in AJAX? Explain in detail with
+Syntax & Example. (L)*
+Q) What are the steps to open and interact with a database in PHP. Explain
+with example.(L)*
+Q) What is introspection? Explain any four introspective functions provided
+by PHP ** (L)
+Q) Describe following headers : (L)*
+    i) Expiration
+    ii) Redirection
+    iii) Content - type
+Q) What is XML parser? What are different types of it?** (L)
+
+Q) What is self - processing form? Explain with the help of example. *** (L)
+->
+
+<?php
+$name = "";
+$greeting = "";
+
+// Check if form is submitted
+if (isset($_POST['name'])){
+    $name = htmlspecialchars($_POST["name"]);
+    $greeting = "Hello, $name!";
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Processing Form</title>
+</head>
+<body>
+
+<h2>Enter Your Name</h2>
+<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    Name: <input type="text" name="name" value="<?php echo $name; ?>">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+#/
+
+-------------------------------------------------------------------------------
+#PEAR DB :  
+=========
+g) Consider a table book (book_id, isbn_no, author, publ, price).
+Write a PHP script to display the top 3 costliest book written by user
+specified author name. (Use PEAR DB method.) (4M)
+c) Consider a table marklist (seat-no, sub-code, marks). Write a PHP script
+which will accept seat-no, sub-code and updated marks from user and
+modify the marks of the student to changed marks.
+(use PEAR DB method). (5M)
+a) Explain the function for making connection and executing a query
+using PEAR DB.
+
+----------------------------------------------------------------------------------
+# CODES :
+========
+d) Write a PHP script to define an interface which has methods area ( ),
+volume ( ). Define constant PI. Create a class cylinder. 
+Which implements interface methods and calculate area and volume.(Also for explain interface using example)*
+
+g) Write PHP script to create a class worker that has data members as
+Worker_Name, No_of_day's_Worked, Pay_Rate. Define parameterized
+constructor. Write necessary member function to calculate and display
+the salary of worker.
+
+b) Write a PHP script to display the empbyee whose salary is greater than
+or equal to average salary. Consider the following tables
+dept (deptno, deptname, location)
+emp (empno, empname, after, phno, sal, teptno)
+
+c) Write a PHP script to create session.
+<?php
+
+session_start();
+$_SESSION["username"] = "Parth_Lohar";
+$_SESSION["email"] = "spamail@gmail.com";
+echo "Session variables are set";
+
+?>
+#/
+
+Q) Write a PHP script to define a class rectangle with length and breath as
+data members. Define constructor and destructor for the class. Also
+define area () and perimeter() functions to display area and perimeter of
+a rectangle.
+
+d) Write a PHP program which accepts the department name from user and
+displays the highest salary paid to the employee in that specific department.
+Consider the tables dept (deptno, deptname, location) emp (empno,
+empname, addr, sal, deptno)
+
+g) Write a PHP program to accept student rno, name on first .php and
+marks of three subjects on second .php and display students all
+information on third .php. (50/50)
+
+
+==========================================================================
+THESE ARE JUST EXTRAAZZZ!!!.
+------------------------------------------------------------------------
+# RANDOM
+Q) Create an application that reads Book. XML file into simple XML object.
+Display attributes and elements (Hint : use simple-XML-load-file())
+f) How to call a constructor of a parent class from a child class? Explain
+with suitable example
