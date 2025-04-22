@@ -1,0 +1,10 @@
+Chp 1 : Introduction to PHP
+
+How does php works ?
+Ans: A web Browser makes a request for a Web Page. Depending on the url the browser finds the address of web sever.
+It then identifies the page and give any other information the Web Server may require.
+
+Refer the Doc !!!!.
+
+Chp 2 :  Fuctions & Arrays 
+
