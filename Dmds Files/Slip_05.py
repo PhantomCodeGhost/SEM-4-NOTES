@@ -33,8 +33,6 @@ url = 'https://raw.githubusercontent.com/PhantomCodeGhost/SEM-4-NOTES/refs/heads
 df = pd.read_csv(url)
 print(df.head(10))
 
-print("\nData Set (first 10 rows):\n", df.head(10))
-
 # Split into features and target
 X = df.iloc[:, :-1]   # all columns except last
 y = df.iloc[:, -1]    # last column
