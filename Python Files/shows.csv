@@ -1,4 +1,4 @@
-Age,Experience,Rank,Nationality,Go
+Age,Experience,Rank,Nationality,Show
 36,10,9,UK,NO
 42,12,4,USA,NO
 23,4,6,N,NO
@@ -11,4 +11,5 @@ Age,Experience,Rank,Nationality,Go
 35,5,9,N,YES
 24,3,5,USA,NO
 18,3,7,UK,YES
+
 45,9,9,UK,YES
