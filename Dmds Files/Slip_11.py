@@ -36,7 +36,7 @@ plt.xlabel("Eculdean Distance")
 plt.show()
 
 from sklearn.cluster import AgglomerativeClustering 
-m = AgglomerativeClustering(n_clusters=4, metric='euclidean', linkage='ward')
+m = AgglomerativeClustering(n_clusters=3, metric='euclidean', linkage='ward')
 y_pred = m.fit_predict(x)
 
 plt.scatter(x[y_pred==0,0],x[y_pred==0,1], s=100, c='blue', label='Cluster 0')
@@ -48,3 +48,4 @@ plt.ylabel("Grocery")
 plt.legend()
 plt.title("Clustering")
 plt.show()
+
