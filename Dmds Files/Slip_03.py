@@ -1,16 +1,20 @@
 Q1
 
-num = as.integer(readline("Enter any number : "))
-sum = 0
-rev = 0
-while(num > 0){
-r = num %% 10
-sum = sum+r
-rev =  rev * 10 + r
-num=num%/%10
+reverse = function(n){
+  original = n
+  sum = 0
+  rev = 0
+  
+  while(n > 0){
+    digit = n %% 10
+    sum = sum + digit
+    rev = rev * 10 + digit
+    n = n %/% 10
+  }
+  cat("Original:", original, "\nSum:", sum, "\nReverse:", rev)
 }
-cat("\n Reverse = ",rev)
-cat("\n Sum of Digit = ",sum)
+num = as.integer(readline("Enter a number: "))
+reverse(num)
 
 
 
@@ -56,3 +60,4 @@ plt.xlabel("--- xvalues ---")
 plt.ylabel("--- yvalues ---")
 plt.legend()
 plt.show()
+
