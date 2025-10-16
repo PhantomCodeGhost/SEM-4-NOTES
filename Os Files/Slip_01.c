@@ -19,7 +19,6 @@ int main(){
         printf("Parent process (
             PID: %d), nice value %d\n", getpid(), retnice);
         wait(NULL);
-        sleep(1);
     }
     
     return 0;
@@ -172,5 +171,6 @@ int main() {
     
     return 0;
 }
+
 
 
