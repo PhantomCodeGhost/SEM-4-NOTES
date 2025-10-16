@@ -1,10 +1,10 @@
 // Q1 Write a program that demonstrates the use of nice() system call. After a child process is started using fork(), assign higher priority to the child using nice() system call.   
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <stdio.h>      // For input/output functions: printf()
+#include <stdlib.h>     // For general utilities: nice() function
+#include <unistd.h>     // For POSIX OS API: fork(), getpid(), sleep(), nice()
+#include <sys/types.h>  // For system data types: pid_t (used by fork() and getpid())
+#include <sys/wait.h>   // For process control: wait() function
 
 int main(){
     int pid, retnice;
@@ -172,4 +172,5 @@ int main() {
     
     return 0;
 }
+
 
