@@ -1,33 +1,3 @@
-/* 1. Create a child process using fork(), display parent and child process id. Child 
-process will display the message “Hello World” and the parent process should display 
-“Hi”. 
-*/
-
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-int main(){
-    
-    pid_t pid;
-    pid = fork();
-    if(pid < 0){
-        perror("fork failed");
-        return 1;
-    }
-    else if(pid == 0){
-        printf("Child process id: %d\n", getpid());
-        printf("Hello World\n");
-    }
-    else{
-        printf("parent process id : %d\n", getpid());
-        printf("hii\n");
-    }
-    return 0;    
-}
-
-
-
-x-----x
 // Q2 Banker Choice
 
 #include <stdio.h>
@@ -159,4 +129,5 @@ int main(){
     } while(choice != 6);
 
     return 0;
+
 }
